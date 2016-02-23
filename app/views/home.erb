@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h1>Chitter Homepage</h1>
+    <form action="/users" method="POST">
+      <h2>Sign Up</h2>
+      <label for="name">
+        Input name: <input name="name" type="name">
+      </label>
+      <label for="password">
+        Input password: <input name="password" type="password">
+      </label>
+      <input type="submit" value="Submit"/>
+    </form>
+    <h2><%= $user_name %></h2>
+    <h2><%= $user_password %></h2>
+  </body>
+</html>
