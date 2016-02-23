@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <section id="view peeps">
+      <ul id="peeps">
+        <% @peeps.each do | a | %>
+          <li>
+            Id:   <%= a.id %>
+            Peep: <%= a.peep %>
+          </li>
+        <% end %>
+    </section>
+    <section id="new peep">
+      <form action="/peeps/new" method="GET">
+        <input type="submit" value="New Peep"/>
+      </form>
+    </section>
+  </body>
+</html>

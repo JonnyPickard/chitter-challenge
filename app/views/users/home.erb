@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h1>Chitter Homepage</h1>
+    <section id="sign up">
+      <form action="/users/new" method="GET">
+        <h2>New User</h2>
+        <input type="submit" value="Sign Up"/>
+      </form>
+    </section>
+    <section id="view peeps">
+      <form action="/peeps" method="GET">
+        <input type="submit" value="View Peeps"/>
+      </form>
+    </section>
+    <h2><%= $user_name %></h2>
+  </body>
+</html>
